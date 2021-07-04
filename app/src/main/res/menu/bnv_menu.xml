@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/op_HomeFragment" android:title="Inicio" android:icon="@drawable/ic_home_24"/>
+    <item android:id="@+id/op_SchedulerFragment" android:title="Cronograma" android:icon="@drawable/ic_scheduler_note_24"/>
+    <item android:id="@+id/op_Speakers" android:title="Espositores" android:icon="@drawable/ic_speakers_24"/>
+    <item android:id="@+id/op_Ubication" android:title="Mapa" android:icon="@drawable/ic_map_24"/>
+</menu>

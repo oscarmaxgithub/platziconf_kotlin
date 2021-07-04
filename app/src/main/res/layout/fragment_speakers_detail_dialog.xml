@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.fragments.SpeakersDetailDialogFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Toolbar
+            android:id="@+id/toolbarspeakerDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivFotoSpeaker"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="40dp"
+                        android:src="@mipmap/ic_launcher" />
+
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_parrafo"
+                        android:orientation="vertical">
+
+
+
+                        <TextView
+                            android:id="@+id/txtspeakerDetailSpeaker"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="Nombre Apellido"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="@dimen/detail_txtSizeDetailSpeaker_speaker"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/txtspeakerJob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="Job Title"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="@dimen/detail_txtSizeDetailHour_speaker" />
+
+                        <TextView
+                            android:id="@+id/txtspeakerDetailWorkPlace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="Trabajo place"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="@dimen/detail_txtSizeDetailTag_speaker" />
+
+                        <ImageView
+                            android:id="@+id/ivTwitterIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/ic_icons_twitter" />
+
+                        <TextView
+                            android:id="@+id/txtspeakerDetailDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="center_horizontal"
+                            android:text="Detalle de Speaker"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="@dimen/detail_txtSizeDescriptionDetail_speaker" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

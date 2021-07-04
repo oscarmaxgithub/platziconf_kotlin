@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/item_txtSchedulerHour"
+                android:text="00:00"
+                android:gravity="right|bottom"
+                android:textSize="@dimen/item_txtSizeTitleHour_scheduler"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/item_txtSchedulerAMPM"
+                android:text="AM"
+                android:gravity="right|top"
+                android:textSize="@dimen/item_txtSizeTitleAMPM_scheduler"
+                android:textColor="?attr/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3">
+            <TextView
+                android:id="@+id/item_tvSchedulerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Titulo conferencia a0isjdoiasodiasodija"
+                android:textSize="@dimen/item_txtSizeTitleDetail_scheduler"
+                android:textColor="?attr/colorPrimaryDark"
+                android:ellipsize="end"
+                android:maxLines="1"
+                />
+            <TextView
+                android:id="@+id/item_tvSchedulerSpeaker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Oscar Diaz"
+                android:textSize="@dimen/item_txtSizeSubTitleDetail_scheduler"
+                android:textColor="?attr/colorPrimary"
+                android:ellipsize="end"
+                android:maxLines="1"
+                />
+            <TextView
+                android:id="@+id/item_tvSchedulerTema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Angular"
+                android:textSize="@dimen/item_txtSizeSubTitleDetail_scheduler"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:background="@drawable/shape_topico"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/gray"/>
+
+</LinearLayout>
